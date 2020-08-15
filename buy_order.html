@@ -58,6 +58,37 @@ a[x-apple-data-detectors] {
 	line-height:0;
 	mso-hide:all;
 }
+
+
+
+input[type='radio']:after {
+        width: 17px;
+        height: 17px;
+        border-radius: 10px;
+        top: -2px;
+        left: -1px;
+        position: relative;
+        background-color: #d1d3d1;
+        content: '';
+        display: inline-block;
+        visibility: visible;
+       /* border: 2px solid white;*/
+    }
+
+    input[type='radio']:checked:after {
+        width: 17px;
+        height: 17px;
+        border-radius: 10px;
+        top: -2px;
+        left: -1px;
+        position: relative;
+        background-color:#E9B640;
+        content: '';
+        display: inline-block;
+        visibility: visible;
+       /* border: 2px solid white;*/
+    }
+
 @media (min-width: 350px) and (max-width: 490px) {
   footer {
     width: 100% !important;
@@ -89,8 +120,15 @@ a[x-apple-data-detectors] {
 #res_btn {
   font-size: 15px !important;
 }
-#fb {
-  width: 10% !important;
+#tbl {
+  width: 100% !important;
+}
+#rado {
+  width: 100% !important;
+}
+
+#main_res_img {
+  width: 50% !important;
 }
 
 }
@@ -150,19 +188,52 @@ a[x-apple-data-detectors] {
 
 
 
-                            <h3 style=" font-size: 28px;  color: #3B325F !important; Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:arial, 'helvetica neue', helvetica, sans-serif;line-height:1.5;color:#333333" class="mt-5 res_text lg_text" id="text_color"><b id="main_res1"><b>Password Changed <br> Successfully!</b></h3>
+                            <h3 style=" font-size: 28px;  color: #3B325F !important; Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:arial, 'helvetica neue', helvetica, sans-serif;line-height:1.5;color:#333333" class="mt-5 res_text lg_text" id="text_color"><b id="main_res1">Buy Order successful !</b></h3>
 
 
 
-                      <img src="main_03.png" alt width="84" style=" margin-top: 20px; display:block;border:0;outline:none;text-decoration:none;-ms-interpolation-mode:bicubic;width:35%;height:60%">
+                      <img id="main_res_img"  src="main_04.png" alt width="84" style="width: 30%; margin-top: 20px; display:block;border:0;outline:none;text-decoration:none;-ms-interpolation-mode:bicubic;">
 
 
 
 <p style="color: #3B325F !important; font-size: 20px !important; ;"><b>Hi user,</b></p>
-<p id="main_res"  style="color: #3B325F !important; font-size: 20px; line-height: 1.5;"><b>This is a confirmation that the password for <br> your GoldLane Account has just been <br> changed .</b></p>
+<p id="main_res" style="color: #3B325F !important; font-size: 20px;"><b>Your buy order on dd/mm/yyyy was <br> successful.
+</b></p>
 
+<div id="tbl" style="border: 2px solid; width: 80%; border-radius: 10px; border-color: #F1F5F9">
+<table style="width:90%; line-height: 1.5;">
+            <div style="border-bottom: 2px solid; height: 30px; border-color: #F1F5F9;">
+            
+              <p style="text-align: left; color: #3B325F; padding-left: 25px; font-size: 20px; margin-top: 18px;"><b>Order Summary</b></p>
+      
+            </div>
+        
 
-<p id="main_res" style="color: #3B325F !important; font-size: 20px; line-height: 1.5; font-weight: 100 !important;">If you didn't change your password, reach out <br> our support team immediately.</p>
+        <div class="mt-2">
+            <tr>
+               <td><span style="font-size: 19px; color: #6E668A;">Order ID:<span></td>
+               <td><b style="font-size: 19px;  color: #6E668A;">12323</b></td>
+             
+            </tr>
+            <tr>
+               <td><span style="font-size: 19px; color: #6E668A">Commodity:</span></td>
+               <td><b style="font-size: 19px; color: #6E668A;">Gold 22k 916</b></td>
+             
+            </tr>
+            <tr>
+               <td><span style="font-size: 19px; color: #6E668A">Weight:</span></td>
+               <td><b style="font-size: 19px; color: #6E668A;">0.9898 Grams</b></td>
+             
+            </tr>
+            <tr>
+               <td><span style="font-size: 19px; color: #6E668A">Amount:</span></td>
+               <td><b style="font-size: 19px; color: #6E668A;">Rs.8494</b></td>
+             
+            </tr>
+       </div>
+ </table>
+</div>
+
 
 
 
@@ -210,63 +281,68 @@ a[x-apple-data-detectors] {
             <h5 class="mt-1 res_text1 lg_text" id="text_color"><b>company to your friend or colleague?</b></h5> -->
 
 
-
-          <!--   <table>
+<!-- 
+            <table>
       <tr>
-        <td>
-       <input type="radio" name="radio" id="my_radio_button_id1" />
-        <label for="my_radio_button_id1">1</label>
-          </td>
-          <td>
+        <td style="display: inline-block; text-align: center;">
+           <input type="radio" name="radio" id="my_radio_button_id1" />
+            <label for="my_radio_button_id1" style="display: block;">1</label>
+        </td>
+
+        <td style="display: inline-block; text-align: center;">
+           <input type="radio" name="radio" id="my_radio_button_id1" />
+            <label for="my_radio_button_id1" style="display: block;">1</label>
+        </td>
+
+        <td style="display: inline-block; text-align: center;">
+           <input type="radio" name="radio" id="my_radio_button_id1" />
+            <label for="my_radio_button_id1" style="display: block;">1</label>
+        </td>
+
+        <td style="display: inline-block; text-align: center;">
+           <input type="radio" name="radio" id="my_radio_button_id1" />
+            <label for="my_radio_button_id1" style="display: block;">1</label>
+        </td>
+
+        <td style="display: inline-block; text-align: center;">
+           <input type="radio" name="radio" id="my_radio_button_id1" />
+            <label for="my_radio_button_id1" style="display: block;">1</label>
+        </td>
+
+        <td style="display: inline-block; text-align: center;">
+           <input type="radio" name="radio" id="my_radio_button_id1" />
+            <label for="my_radio_button_id1" style="display: block;">1</label>
+        </td>
+
+        <td style="display: inline-block; text-align: center;">
+           <input type="radio" name="radio" id="my_radio_button_id1" />
+            <label for="my_radio_button_id1" style="display: block;">1</label>
+        </td>
+
+        <td style="display: inline-block; text-align: center;">
+           <input type="radio" name="radio" id="my_radio_button_id1" />
+            <label for="my_radio_button_id1" style="display: block;">1</label>
+        </td>
+
+        <td style="display: inline-block; text-align: center;">
+           <input type="radio" name="radio" id="my_radio_button_id1" />
+            <label for="my_radio_button_id1" style="display: block;">1</label>
+        </td>
+
+        <td style="display: inline-block; text-align: center;">
+           <input type="radio" name="radio" id="my_radio_button_id1" />
+            <label for="my_radio_button_id1" style="display: block;">1</label>
+        </td>
+       
         
-        <input type="radio" name="radio" id="my_radio_button_id2" />
-        <label for="my_radio_button_id2">2</label>
-          </td>
-          <td class="checkboxgroup">
-            
-        <input type="radio" name="radio" id="my_radio_button_id3" />
-        <label for="my_radio_button_id3">3</label>
-          </td>
-          <td class="checkboxgroup">
-       <input type="radio" name="radio" id="my_radio_button_id1" />
-        <label for="my_radio_button_id1">4</label>
-          </td>
-          <td class="checkboxgroup">
         
-        <input type="radio" name="radio" id="my_radio_button_id2" />
-        <label for="my_radio_button_id2">5</label>
-          </td>
-          <td class="checkboxgroup">
-            
-        <input type="radio" name="radio" id="my_radio_button_id3" />
-        <label for="my_radio_button_id3">6</label>
-          </td>
-          <td class="checkboxgroup">
-       <input type="radio" name="radio" id="my_radio_button_id1" />
-        <label for="my_radio_button_id1">7</label>
-          </td>
-          <td class="checkboxgroup">
-        
-        <input type="radio" name="radio" id="my_radio_button_id2" />
-        <label for="my_radio_button_id2">8</label>
-          </td>
-          <td class="checkboxgroup">
-            
-        <input type="radio" name="radio" id="my_radio_button_id3" />
-        <label for="my_radio_button_id3">9</label>
-          </td>
-          <td class="checkboxgroup">
-            
-        <input type="radio" name="radio" id="my_radio_button_id3" checked />
-        <label for="my_radio_button_id3">10</label>
-          </td>
 
       </tr>
 
 
     </table>
- -->
 
+ -->
 
 
 
@@ -274,7 +350,78 @@ a[x-apple-data-detectors] {
 
                       <!--   <span class="es-button-border" style="margin-top: 20px; background:#4070F4;border-width:0px 0px 0px 0px;display:inline-block;border-radius:10px;width:auto"><a id="res_btn" href="" class="es-button" target="_blank" style=" mso-style-priority:100 !important;text-decoration:none;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:arial, 'helvetica neue', helvetica, sans-serif;font-size:20px;color:#FFFFFF;border-style:solid;border-color:#4070F4;border-width:15px 40px 15px 40px;display:inline-block;background:#4070F4;border-radius:30px;font-weight:normal;font-style:normal;line-height:22px;width:auto;text-align:center">Verify Email Address</a></span> -->
 
-                      <button id="res_btn" style=" margin-top: 20px; padding:15px 20px; ; border: none; outline: none; background-color: #4070F4; color: white; border-radius: 10px; font-size: 20px;" >Verify Email Address</button>
+                      <button id="res_btn" style=" margin-top: 25px; padding:15px 20px; ; border: none; outline: none; background-color: #4070F4; color: white; border-radius: 10px; font-size: 18px;" >Raise a Complaint</button>
+
+
+                      <p id="main_res" style="color: #3B325F !important; font-size: 20px; margin-top: 50px !important; font-weight: 100;"><b>Your Feedback</b></p>
+
+                      <p id="main_res" style="color: #3B325F !important; font-size: 20px; line-height: 1.5">How likely is that you would recommend <br> GoldLane to your friend or colleague?</p>
+
+
+
+
+          <div id="rado" style="border: 2px solid; width: 80%; margin-top: 40px; height: 60px; border-color: #F1F5F9; border-radius: 10px;">
+            <div style="margin-top: 10px; width: 85%; display: flex; justify-content: space-between;">
+          <div style="display: inline-block; text-align: center;">
+             <input type="radio" name="radio" id="my_radio_button_id1" />
+              <label style="display: block; margin-top: 5px; color: #3B325F;" for="my_radio_button_id1">1</label>
+          </div>
+
+          <div style="display: inline-block; text-align: center;">
+             <input type="radio" name="radio" id="my_radio_button_id1" />
+              <label style="display: block; margin-top: 5px; color: #3B325F;" for="my_radio_button_id1">2</label>
+          </div>
+
+          <!-- <div style="display: inline-block; text-align: center;">
+             <input type="radio" name="radio" id="my_radio_button_id1" />
+              <label style="display: block; margin-top: 5px;" for="my_radio_button_id1">2</label>
+          </div> -->
+
+          <div style="display: inline-block; text-align: center;">
+             <input type="radio" name="radio" id="my_radio_button_id1" />
+              <label style="display: block; margin-top: 5px; color: #3B325F;" for="my_radio_button_id1">3</label>
+          </div>
+
+          <div style="display: inline-block; text-align: center;">
+             <input type="radio" name="radio" id="my_radio_button_id1" />
+              <label style="display: block; margin-top: 5px; color: #3B325F;" for="my_radio_button_id1">4</label>
+          </div>
+
+          <div style="display: inline-block; text-align: center;">
+             <input type="radio" name="radio" id="my_radio_button_id1" />
+              <label style="display: block; margin-top: 5px; color: #3B325F;" for="my_radio_button_id1">5</label>
+          </div>
+
+          <div style="display: inline-block; text-align: center;">
+             <input type="radio" name="radio" id="my_radio_button_id1" />
+              <label style="display: block; margin-top: 5px; color: #3B325F;" for="my_radio_button_id1">6</label>
+          </div>
+
+          <div style="display: inline-block; text-align: center;">
+             <input type="radio" name="radio" id="my_radio_button_id1" />
+              <label style="display: block; margin-top: 5px; color: #3B325F;" for="my_radio_button_id1">7</label>
+          </div>
+
+          <div style="display: inline-block; text-align: center;">
+             <input type="radio" name="radio" id="my_radio_button_id1" />
+              <label style="display: block; margin-top: 5px; color: #3B325F;" for="my_radio_button_id1">8</label>
+          </div>
+
+          <div style="display: inline-block; text-align: center;">
+             <input type="radio" name="radio" id="my_radio_button_id1" />
+              <label style="display: block; margin-top: 5px; color: #3B325F;" for="my_radio_button_id1">9</label>
+          </div>
+
+          <div style="display: inline-block; text-align: center;">
+             <input type="radio" name="radio" checked id="my_radio_button_id1" />
+              <label style="display: block; margin-top: 5px; color: #3B325F;" for="my_radio_button_id1">10</label>
+          </div>
+
+
+          </div>
+          </div>
+
+           <button id="res_btn" style=" margin-top: 25px; padding:15px 20px; ; border: none; outline: none; background-color: #E9B640; color: white; border-radius: 10px; font-size: 18px;" >Submit Feedback</button>
 
 
 
@@ -292,7 +439,7 @@ a[x-apple-data-detectors] {
         background: #E9B640 0% 0% no-repeat padding-box;
 
  background-image: url("goldicon.png");
-        background-position: bottom -60px left -90px;
+        background-position: bottom -120px left -50px;
   background-size:300px 300px;
  
 '>
@@ -301,19 +448,15 @@ a[x-apple-data-detectors] {
    height: 150px;" >
     <h4 id="main_res2" style="color:white; font-size: 26px"><b>Grow your gold with GoldLane!</b></h4> 
    <div>
-              <a  class="pr-3"><img id="fb" style="max-width: 3.2%;" class="soc_icn" src="fb.png"></a>
+              <a  class="pr-3"><img width="2.5%" class="soc_icn" src="fb.png"></a>
               <span>&nbsp;</span>
-          
-              <a class="pr-3"><img style="max-width: 8%;" class="soc_icn" src="ins.png"></a>
+              <a class="pr-3"><img  width="5%" class="soc_icn" src="ins.png"></a>
               <span>&nbsp;</span>
-            
-              <a class="pr-3"><img style="max-width: 8%;" class="soc_icn" src="twitter.png"></a>
+              <a class="pr-3"><img  width="5%" class="soc_icn" src="twitter.png"></a>
               <span>&nbsp;</span>
-           
-              <a class="pr-3"><img style="max-width: 8%;" class="soc_icn" src="youtube.png"></a>
+              <a class="pr-3"><img width="5%"  class="soc_icn" src="youtube.png"></a>
               <span>&nbsp;</span>
-            
-              <a><img style="max-width: 8%;" class="soc_icn" src="in.png"></a>
+              <a><img width="5%"  class="soc_icn" src="in.png"></a>
                     
         </div>
   </div>
